@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+#
+# HBUE, Antonio Ragagnin (2014)
+#
+
 import http.server
 import socketserver
 import ssl
