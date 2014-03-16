@@ -1,7 +1,7 @@
 hbue.py
 =======
 
-HBUE is an HTTP Browse+Upload+Execute server.
+HBUE is an very-simple HTTP Browse+Upload+Execute server.
 
 Tested on linux and windows.
 
