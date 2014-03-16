@@ -40,7 +40,7 @@ def main():
 	#let's build an anonymous class and store it in the server
 	base64credentials = None
 	if(args.credentials!=None):base64credentials =base64.b64encode(bytes(args.credentials,'utf-8'))
-        httpd.context = type("", (), dict(
+	httpd.context = type("", (), dict(
                 execute= args.execute, chunk=args.chunk,folder=args.folder,credentials=base64credentials
                 ))() 
 	if(args.ssl):
