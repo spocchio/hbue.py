@@ -1,4 +1,10 @@
 hbue.py
 =======
 
-Simpe HTTP(S) Python server with authentication/browse/upload/execute/delete functionalities
+HBUE is an HTTP Browse+Upload+Execute server.
+
+Tested on linux and windows.
+
+Usage:
+    
+    python hweb.py --ssl .\my_certificate.pem --execute python --credentials 'user:password' --folder c:\users\Antonio\desktop -listen localhost:4443
