@@ -3,6 +3,13 @@
 #
 # HBUE, Antonio Ragagnin (2014)
 #
+# HBUE is an HTTP(S) Browse+Upload+Execute server.
+# This tool runs an HTTP (or HTTPS) server, with the optional
+# support of Basic Authentication. This server mainly furhishes
+# a simple interface to upload, browse end execute files.
+# Also, you can remove and download files.
+#
+# usage info: hbue.py --help
 
 import http.server
 import socketserver
@@ -19,7 +26,7 @@ def main():
 	chunk = 1024
 	folder = '.'
 	certificate = None
-	parser = argparse.ArgumentParser(description='HBUE is an HTTP Browse+Upload+Execute server.')
+	parser = argparse.ArgumentParser(description='HBUE is an HTTP(S) Browse+Upload+Execute server.')
 	parser.add_argument('--listen', type=str, help='listening mask (default: localhost:4443)',default='localhost:4443')
 	parser.add_argument('--execute', type=str,help='command to execute on clicked files.')
 	parser.add_argument('--ssl', type=str, help='specify the .pem file to start an HTTPS server')
