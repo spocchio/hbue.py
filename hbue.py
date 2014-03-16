@@ -27,7 +27,7 @@ def main():
 	folder = '.'
 	certificate = None
 	parser = argparse.ArgumentParser(description='HBUE is an HTTP(S) Browse+Upload+Execute server.\r\nAntonio Ragagnin (2014)')
-	parser.add_argument('--listen', type=str, help='listening mask (default: localhost:4443)',default='localhost:4443')
+	parser.add_argument('--listen', type=str, help='listening mask (default: 0.0.0.0:4443)',default='0.0.0.0:4443')
 	parser.add_argument('--execute', type=str,help='command to execute on clicked files.')
 	parser.add_argument('--ssl', type=str, help='specify the .pem file to start an HTTPS server')
 	parser.add_argument('--credentials', type=str, help='login:password string')
