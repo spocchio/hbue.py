@@ -22,7 +22,6 @@ import base64
 import cgi
 import subprocess
 
-
 def main():
 	chunk = 1024
 	folder = '.'
@@ -39,9 +38,11 @@ def main():
 	print ('server running on',listen_t,'...')
 	httpd = http.server.HTTPServer(listen_t, MyHandler)
 	#let's build an anonymous class and store it in the server
-	httpd.context = type("", (), dict(
-		execute= args.execute, chunk=args.chunk,folder=args.folder,credentials=base64.b64encode(bytes(args.credentials,'utf-8'))
-		))() 
+	base64credentials = None
+	if(args.credentials!=None):base64credentials =base64.b64encode(bytes(args.credentials,'utf-8'))
+        httpd.context = type("", (), dict(
+                execute= args.execute, chunk=args.chunk,folder=args.folder,credentials=base64credentials
+                ))() 
 	if(args.ssl):
 		httpd.socket = ssl.wrap_socket (httpd.socket, certfile=args.ssl, server_side=True)
 	httpd.serve_forever()
