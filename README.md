@@ -1,7 +1,7 @@
 hbue.py
 =======
 
-HBUE is an very-simple HTTP Browse+Upload+Execute server, by Antonio Ragagnin (2014).
+HBUE is an very-simple HTTP Browse+Upload+Execute server
 
 
 Tested on linux and windows.
@@ -13,3 +13,7 @@ Tested on linux and windows.
 ###Other
 
 If you need a nodejs version of a upload/browse/execute HTTP server, try: https://github.com/spocchio/hbue.js
+
+###Credits
+
+by Antonio Ragagnin (2014).
