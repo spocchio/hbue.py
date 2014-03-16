@@ -12,7 +12,7 @@ I tested HBUE in both Linux and Windows. To execute HBUE run:
 
 ###Other
 
-If you need a node.js version of a upload/browse/execute HTTP server, then try: `https://github.com/spocchio/hbue.js`.
+If you need a node.js version of a upload/browse/execute HTTP server, then try: [https://github.com/spocchio/hbue.js].
 
 ###Credits
 
